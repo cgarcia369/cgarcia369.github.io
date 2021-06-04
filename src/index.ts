@@ -11,13 +11,9 @@ close_menu.addEventListener('click', (event) => {
 })
 window.addEventListener('scroll', () => {
   if (window.pageYOffset > 30) {
-    navBar.style.backgroundColor = "#2a4940";
-    navBar.style.color = "white";
-    menuButtom.style.fill = "white";
+    navBar.classList.add("active");
   } else {
-    navBar.style.backgroundColor = "";
-    navBar.style.color = "#353535";
-    menuButtom.style.fill = "#353535";
+    navBar.classList.remove("active");
   }
 })
 

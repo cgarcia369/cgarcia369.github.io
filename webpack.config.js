@@ -6,7 +6,6 @@ module.exports = {
     mode: 'development',
     entry: {
         main: './src/index.ts',
-        exampleEntry: './src/example.ts'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -22,11 +21,6 @@ module.exports = {
             template: 'index.html',
             chunks: ['main']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'example.html',
-            template: 'example.html',
-            chunks: ['exampleEntry']
-        })
 
         // Add your plugins here
         // Learn more about plugins from https://webpack.js.org/configuration/plugins/
